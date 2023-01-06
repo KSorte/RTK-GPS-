@@ -1,0 +1,4 @@
+<launch>
+<arg name = "port" default = "/dev/pts/1"/>
+<node pkg = "gps_driver_package" name = "gps_sensor" args= "$(arg port)" type = "driver_RTKGPS.py"/>
+</launch> 
